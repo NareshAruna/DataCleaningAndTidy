@@ -1,10 +1,23 @@
+STEPS FOLLOWED FOR CLEANING THE DATA
+
+1) The R library dplyr and reshape2 are loaded to perform the data cleaning activity on the data set 
+2) The given data (both training set and testing set) are read using read.table funcation to a r variable
+3) The data collected for training set and testing set are merged using the rbind fucntion
+4) The names to be given for the above data set is fetched from the feature list file and assigned to it
+5) The columns containing the mean adn standard devitaion values are alone extracted and stored to a new data frame.
+6) The Subject from whom the data was collected and activity performed to collect the data are merged to the new data frame created in previous step using the cbind function. this will form the first tidy data set
+7) First tidy data set is  grouped by subjecta nd activity column and average of the other variables are performed and stored to the second data frame which forms the second tidy dataset
+8) Both tiday data set are written to the text file.
+
+Below are more details about the data collected 
+
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit‡ degli Studi di Genova.
+DITEN - Universit√† degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
